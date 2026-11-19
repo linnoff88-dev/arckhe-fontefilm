@@ -1,0 +1,87 @@
+schema: pixflow.movie/v1
+meta:
+  title: "12 Leis do Crescimento"
+  author: "fontefilm"
+output:
+  resolution: 1920x1080
+  fps: 30
+  filename: hormozi12.mp4
+defaults:
+  look: cinema-dramatico
+  transition_out: { type: crossfade, duration: 0.5 }
+audio:
+  track: audio/narration.wav
+  volume: 1
+assets:
+  images:
+    - { id: s0, file: img/s0.png }
+    - { id: s1, file: img/s1.png }
+    - { id: s2, file: img/s2.png }
+    - { id: s3, file: img/s3.png }
+    - { id: s4, file: img/s4.png }
+    - { id: s5, file: img/s5.png }
+    - { id: s6, file: img/s6.png }
+    - { id: s7, file: img/s7.png }
+    - { id: s8, file: img/s8.png }
+    - { id: s9, file: img/s9.png }
+    - { id: s10, file: img/s10.png }
+    - { id: s11, file: img/s11.png }
+    - { id: s12, file: img/s12.png }
+    - { id: s13, file: img/s13.png }
+scenes:
+  - id: s0
+    image: s0
+    duration: 6.2
+    camera: { type: push_in, intensity: 0.55, easing: easeInOut }
+  - id: s1
+    image: s1
+    duration: 9.4
+    camera: { type: ken_burns, intensity: 0.55, easing: easeInOut }
+  - id: s2
+    image: s2
+    duration: 9.44
+    camera: { type: pull_out, intensity: 0.55, easing: easeInOut }
+  - id: s3
+    image: s3
+    duration: 9.2
+    camera: { type: push_in, intensity: 0.55, easing: easeInOut }
+  - id: s4
+    image: s4
+    duration: 7.84
+    camera: { type: ken_burns, intensity: 0.55, easing: easeInOut }
+  - id: s5
+    image: s5
+    duration: 8.12
+    camera: { type: push_in, intensity: 0.55, easing: easeInOut }
+  - id: s6
+    image: s6
+    duration: 9.4
+    camera: { type: pan, intensity: 0.55, easing: easeInOut, direction: right }
+  - id: s7
+    image: s7
+    duration: 8.2
+    camera: { type: ken_burns, intensity: 0.55, easing: easeInOut }
+  - id: s8
+    image: s8
+    duration: 9.48
+    camera: { type: push_in, intensity: 0.55, easing: easeInOut }
+  - id: s9
+    image: s9
+    duration: 7.2
+    camera: { type: pull_out, intensity: 0.55, easing: easeInOut }
+  - id: s10
+    image: s10
+    duration: 7.32
+    camera: { type: push_in, intensity: 0.55, easing: easeInOut }
+  - id: s11
+    image: s11
+    duration: 7.44
+    camera: { type: push_in, intensity: 0.55, easing: easeInOut }
+  - id: s12
+    image: s12
+    duration: 8.52
+    camera: { type: ken_burns, intensity: 0.55, easing: easeInOut }
+  - id: s13
+    image: s13
+    duration: 4.96
+    camera: { type: pull_out, intensity: 0.55, easing: easeInOut }

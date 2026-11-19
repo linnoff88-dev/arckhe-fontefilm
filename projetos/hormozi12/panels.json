@@ -1,0 +1,65 @@
+{
+  "style": "bold American graphic-novel comic book art, heavy black ink outlines, dramatic cel shading, halftone dot shading, vibrant cinematic colors, dynamic heroic composition, foreground midground and background clearly separated, layered depth, atmospheric haze between planes, strong rim light, cinematic comic film still, high detail",
+  "negative": "text, letters, words, captions, numbers, watermark, signature, blurry, flat lighting, low contrast, washed out",
+  "width": 1280,
+  "height": 720,
+  "steps": 4,
+  "panels": [
+    { "id": "s0", "seed": 1010, "camera": "push_in",
+      "prompt": "a determined entrepreneur in a sharp suit rising triumphantly above a vast glowing city skyline at golden hour, low-angle hero shot, scattered papers and coins in the foreground, towering skyscrapers fading into haze in the background",
+      "narr": "Doze leis pra fazer um negócio crescer. Direto ao ponto. Bora." },
+
+    { "id": "s1", "seed": 1011, "camera": "ken_burns",
+      "prompt": "a luxury shop window at night, a colossal golden diamond on a pedestal in the midground glowing with an enormous price tag, a small modest product box in the foreground looking like a bargain, a businessman gesturing, deep store interior fading into the background",
+      "narr": "Lei um: oferta âncora. Tenha algo absurdamente caro à venda. Do lado dele, seu produto principal vira pechincha." },
+
+    { "id": "s2", "seed": 1012, "camera": "pull_out",
+      "prompt": "a lone entrepreneur standing on a rooftop shouting into a giant glowing megaphone, sound waves rippling outward in the foreground, a huge city skyline stretching to the horizon in the background under dramatic sky",
+      "narr": "Lei dois: anuncie mais. Ninguém sabe que você existe. O problema quase nunca é o produto. É a falta de alcance." },
+
+    { "id": "s3", "seed": 1013, "camera": "push_in",
+      "prompt": "open hands in the foreground offering a glowing gift box wrapped in light, an eager crowd reaching toward it in the midground, warm rays bursting from the gift, a bright marketplace fading into the background",
+      "narr": "Lei três: comece de graça. Entregue o primeiro resultado sem cobrar. Você derruba a barreira e ganha prova social." },
+
+    { "id": "s4", "seed": 1014, "camera": "ken_burns",
+      "prompt": "a spotlit results board covered in golden trophies and a soaring upward bar chart in the midground, a small podium in the foreground, an impressed audience silhouetted in the dark background, dramatic stage lighting",
+      "narr": "Lei quatro: prova vale mais que promessa. Não diga que é o melhor. Mostre resultados reais." },
+
+    { "id": "s5", "seed": 1015, "camera": "push_in",
+      "prompt": "a giant price tag shaped like an upward arrow climbing skyward in the midground, an elegant premium boutique with a few golden VIP customers, velvet ropes in the foreground, luxurious interior fading into the background",
+      "narr": "Lei cinco: suba os preços. Menos sins, mas cada cliente vale mais. E vem gente melhor." },
+
+    { "id": "s6", "seed": 1016, "camera": "pan",
+      "direction": "right",
+      "prompt": "two enormous interlocking golden gears merging into a single powerful machine funnel in the midground, sparks flying in the foreground, an industrial workshop glowing in the background, dynamic mechanical composition",
+      "narr": "Lei seis: una vendas e marketing. Marketing traz o lead, vendas fecha. Um funil só, sem vazar dinheiro no meio." },
+
+    { "id": "s7", "seed": 1017, "camera": "ken_burns",
+      "prompt": "an entrepreneur leaning in attentively listening to customers across a table in the midground, glowing speech bubbles floating in the foreground, a warm cafe interior fading into the background, intimate lighting",
+      "narr": "Lei sete: fale com seus clientes. Eles te dizem o que querem comprar, o que falta, e por que cancelam." },
+
+    { "id": "s8", "seed": 1018, "camera": "push_in",
+      "prompt": "a sleek rocket fueled by glowing marketing icons blasting off from an office desk in the midground, bursts of flame and scattered paperwork left behind in the foreground, a dawn sky in the background, dynamic upward motion",
+      "narr": "Lei oito: até quinhentos mil por mês, foco total em marketing. Não é hora de processo nem cultura. É hora de vender." },
+
+    { "id": "s9", "seed": 1019, "camera": "pull_out",
+      "prompt": "a single glowing lever being pulled in the foreground triggering a massive multiplying explosion of golden coins and arrows fanning out in the midground, a vast factory of duplication in the background, epic scale",
+      "narr": "Lei nove: multiplique por dez o que já funciona. Antes de inventar qualquer coisa nova." },
+
+    { "id": "s10", "seed": 1020, "camera": "push_in",
+      "prompt": "a sharp focused laser beam shooting from the foreground striking the bullseye of a single glowing target in the midground, everything else faded and grayed out around it, a dark minimal background, intense focus",
+      "narr": "Lei dez: foco radical. Abaixo de um milhão por ano: um canal, um avatar, um produto." },
+
+    { "id": "s11", "seed": 1021, "camera": "push_in",
+      "prompt": "a lone climber at the base in the foreground facing a steep dark imposing mountain looming in the midground, storm clouds and a faint summit light in the background, dramatic confrontation, heroic low angle",
+      "narr": "Lei onze: enfrente o difícil. O trabalho que você evita é exatamente o que te mantém parado." },
+
+    { "id": "s12", "seed": 1022, "camera": "ken_burns",
+      "prompt": "a focused person at a desk reviewing glowing handwritten notes in the foreground, a circular habit-loop diagram and a weekly calendar glowing on the wall in the midground, a cozy study fading into the background, warm focused light",
+      "narr": "Lei doze: lembrar vale mais que aprender. Você já sabe o que fazer. Revise toda semana até virar hábito." },
+
+    { "id": "s13", "seed": 1023, "camera": "pull_out",
+      "prompt": "a confident entrepreneur walking forward on an open road toward a glowing city at sunrise, long shadow in the foreground, the bright skyline of opportunity in the background, hopeful epic atmosphere",
+      "narr": "Doze leis. Uma decisão: começar hoje." }
+  ]
+}
