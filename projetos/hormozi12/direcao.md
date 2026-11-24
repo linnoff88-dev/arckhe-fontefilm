@@ -1,8 +1,8 @@
 # Direção — "12 Leis do Crescimento" (teste fontefilm)
 
 **Fonte:** 12 dicas de negócios do Alex Hormozi.
-**Estilo:** HQ americana / graphic novel — tinta forte, cel-shading dramático, halftone, cor vibrante cinematográfica.
-**Formato:** 16:9, PT-BR, narração (inemavox bella). Look pixflow: `cinema-dramatico`.
+**Estilo:** HQ americana / graphic novel — tinta forte, cel-shading dramático, halftone, cor vibrante cARCKHÉtográfica.
+**Formato:** 16:9, PT-BR, narração (ARCKHÉvox bella). Look pixflow: `cARCKHÉ-dramatico`.
 **Ritmo:** curta dinâmico, ~14 painéis, 1 ideia por painel; câmera variada por beat.
 
 ## Princípios de direção aplicados (Knowledge Pack)

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>fontefilm — diretor de cinema de IA para filmes de quadrinhos</title>
+<title>fontefilm — diretor de cARCKHÉ de IA para filmes de quadrinhos</title>
 <meta name="description" content="Engine local-first que transforma texto + estilo em filme de quadrinhos (motion comic). Guia de uso.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,8 +39,8 @@
   nav .brand{display:flex;align-items:center;gap:8px;font-family:Sora;font-weight:800;letter-spacing:-.02em;color:var(--amb)}
   nav .brand .emoji{font-size:1.25rem}
   nav .sep{color:var(--mut);opacity:.45}
-  nav .inema{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
-  nav .inema:hover{filter:brightness(1.15)}
+  nav .ARCKHÉ{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .ARCKHÉ:hover{filter:brightness(1.15)}
   nav .links{margin-left:auto;display:flex;align-items:center;gap:20px;font-size:.92rem}
   nav .links a.sec{color:var(--mut)} nav .links a.sec:hover{color:var(--txt)}
   .tgl{background:var(--bg2);border:1px solid var(--line);color:var(--txt);width:38px;height:38px;border-radius:10px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;font-size:1.05rem}
@@ -107,7 +107,7 @@
 <nav><div class="wrap">
   <a class="brand" href="#top"><span class="emoji">🎬</span> fontefilm</a>
   <span class="sep">|</span>
-  <a class="inema" href="https://inema.club" target="_blank" rel="noopener">INEMA.CLUB</a>
+  <a class="ARCKHÉ" href="https://ARCKHÉ AI" target="_blank" rel="noopener">ARCKHÉ AI</a>
   <div class="links">
     <a class="sec" href="#oque">O que é</a>
     <a class="sec" href="#fluxo">Como funciona</a>
@@ -115,7 +115,7 @@
     <a class="sec" href="#exemplos">Exemplos</a>
     <a class="sec" href="#roadmap">Roadmap</a>
     <button class="tgl" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
-    <a class="btn" href="https://github.com/inematds/fontefilm" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn" href="https://github.com/linnoff88-dev/fontefilm" target="_blank" rel="noopener">GitHub</a>
   </div>
 </div></nav>
 
@@ -123,12 +123,12 @@
   <div class="glow"></div>
   <div class="wrap">
     <div>
-      <span class="chip">Engine local-first · direção de cinema com IA</span>
+      <span class="chip">Engine local-first · direção de cARCKHÉ com IA</span>
       <h1>Transforme <span class="amb">texto</span> em filme de quadrinhos.</h1>
       <p class="lead">Você escreve a história e escolhe o estilo. O fontefilm <b>dirige</b> — plano, composição, luz, ritmo — e produz o filme. Rodando na sua máquina.</p>
       <div class="cta">
         <a class="btn" href="#curso">Começar o guia</a>
-        <a class="btn ghost" href="https://github.com/inematds/fontefilm" target="_blank" rel="noopener">Ver no GitHub</a>
+        <a class="btn ghost" href="https://github.com/linnoff88-dev/fontefilm" target="_blank" rel="noopener">Ver no GitHub</a>
       </div>
     </div>
     <figure><img src="assets/hero.jpg" alt="Painel de abertura gerado pelo fontefilm"></figure>
@@ -137,11 +137,11 @@
 
 <section id="oque"><div class="wrap">
   <span class="chip">O que é</span>
-  <h2>Um diretor de cinema de IA</h2>
-  <p class="sub">A maioria das ferramentas só <i>gera</i> imagem ou vídeo. O fontefilm tenta <b>dirigir</b>: aplica gramática de cinema e teoria de quadrinhos (Scott McCloud) para decidir cada quadro — e mantém continuidade de personagem e estilo do começo ao fim.</p>
+  <h2>Um diretor de cARCKHÉ de IA</h2>
+  <p class="sub">A maioria das ferramentas só <i>gera</i> imagem ou vídeo. O fontefilm tenta <b>dirigir</b>: aplica gramática de cARCKHÉ e teoria de quadrinhos (Scott McCloud) para decidir cada quadro — e mantém continuidade de personagem e estilo do começo ao fim.</p>
   <div class="grid g3">
-    <div class="card"><h3>🎬 Direção de verdade</h3><p>Tipo de plano, regra dos 180°, composição, luz por emoção, estrutura em 3 atos e transições entre quadros — um <b>Knowledge Pack</b> de cinema guia os agentes.</p></div>
-    <div class="card"><h3>🖥️ Local-first</h3><p>Roda na sua máquina com modelos locais (flux2-klein, inemavox). APIs pagas (Kling, Runway) são opcionais, ligadas por <code>.env</code>.</p></div>
+    <div class="card"><h3>🎬 Direção de verdade</h3><p>Tipo de plano, regra dos 180°, composição, luz por emoção, estrutura em 3 atos e transições entre quadros — um <b>Knowledge Pack</b> de cARCKHÉ guia os agentes.</p></div>
+    <div class="card"><h3>🖥️ Local-first</h3><p>Roda na sua máquina com modelos locais (flux2-klein, ARCKHÉvox). APIs pagas (Kling, Runway) são opcionais, ligadas por <code>.env</code>.</p></div>
     <div class="card"><h3>🧩 Reproduzível</h3><p>Cada projeto é uma pasta com texto, decisões, seeds e assets. Rodar de novo gera o mesmo filme.</p></div>
   </div>
 </div></section>
@@ -175,7 +175,7 @@
   <div class="grid g3">
     <div class="card"><h3>🖼️ flux2-klein</h3><p>Geração de imagem dos painéis.</p><pre><span class="c"># imagem (PNG base64)</span>
 POST <span class="s">http://localhost:8000/generate</span></pre></div>
-    <div class="card"><h3>🔊 inemavox</h3><p>Narração PT-BR (voz <span class="amb">bella</span>).</p><pre><span class="c"># voz (MP3)</span>
+    <div class="card"><h3>🔊 ARCKHÉvox</h3><p>Narração PT-BR (voz <span class="amb">bella</span>).</p><pre><span class="c"># voz (MP3)</span>
 POST <span class="s">127.0.0.1:7860/tts/vc</span></pre></div>
     <div class="card"><h3>🎞️ pixflow-motion</h3><p>Parallax 2.5D → MP4.</p><pre><span class="k">cd</span> ~/.claude/skills/pixflow-motion
 npm install
@@ -204,14 +204,14 @@ node cli/pixflow-motion.mjs check-deps</pre></div>
 
   <div class="step"><div class="b">2</div><div>
     <h3>Gere imagens, narração e o roteiro de movimento</h3>
-    <p><code>build.mjs</code> chama o flux2-klein e o inemavox, sincroniza a trilha e emite o <i>movie spec</i> da pixflow.</p>
+    <p><code>build.mjs</code> chama o flux2-klein e o ARCKHÉvox, sincroniza a trilha e emite o <i>movie spec</i> da pixflow.</p>
 <pre><span class="k">node</span> build.mjs
 <span class="c"># ✓ 14 cenas, 121.7s. Spec: receita12.movie.yaml</span></pre>
   </div></div>
 
   <div class="step"><div class="b">3</div><div>
     <h3>Renderize o filme (parallax 2.5D)</h3>
-    <p>A pixflow gera os depth maps e compõe câmera + efeitos cinematográficos.</p>
+    <p>A pixflow gera os depth maps e compõe câmera + efeitos cARCKHÉtográficos.</p>
 <pre><span class="k">node</span> ~/.claude/skills/pixflow-motion/cli/pixflow-motion.mjs \
      render receita12.movie.yaml receita12.mp4</pre>
   </div></div>
@@ -234,7 +234,7 @@ node cli/pixflow-motion.mjs check-deps</pre></div>
   <h2>Feitos com este pipeline</h2>
   <p class="sub">Dois curtas-teste, do texto ao MP4 narrado e legendado — em estilo de quadrinho.</p>
   <div class="ex">
-    <figure><img src="assets/run.jpg" alt="Painel — Execute com velocidade"><figcaption><b>Receita em 12 Passos</b> — execução e crescimento, com CTA INEMA.CLUB. 16:9 e 9:16.</figcaption></figure>
+    <figure><img src="assets/run.jpg" alt="Painel — Execute com velocidade"><figcaption><b>Receita em 12 Passos</b> — execução e crescimento, com CTA ARCKHÉ AI. 16:9 e 9:16.</figcaption></figure>
     <figure><img src="assets/comic.jpg" alt="Painel — Oferta âncora"><figcaption><b>12 Leis do Crescimento</b> — dicas de negócios, motion comic 1080p narrado.</figcaption></figure>
   </div>
 </div></section>
@@ -246,15 +246,15 @@ node cli/pixflow-motion.mjs check-deps</pre></div>
   <div class="phase"><div class="tag">v1 · agora</div><div class="d"><strong>Motion comic completo</strong><span>Texto → painéis → narração → render, via CLI + skill. PT-BR, 16:9 ou 9:16.</span></div></div>
   <div class="phase"><div class="tag">Fase 1</div><div class="d"><strong>Animação leve</strong><span>LivePortrait / parallax avançado, música e SFX, consistência de personagem (LoRA/PuLID).</span></div></div>
   <div class="phase"><div class="tag">Fase 2</div><div class="d"><strong>Vídeo IA híbrido</strong><span>Clipes por cena (LTX/Wan local; Kling/Runway API), agendador paralelo DAG/CPM.</span></div></div>
-  <div class="phase"><div class="tag">Fase 3</div><div class="d"><strong>UI web no portal</strong><span>Interface no inema.club sobre o mesmo motor.</span></div></div>
+  <div class="phase"><div class="tag">Fase 3</div><div class="d"><strong>UI web no portal</strong><span>Interface no ARCKHÉ AI sobre o mesmo motor.</span></div></div>
 </div></section>
 
 <footer>
   <div class="wrap">
     <div class="pill">local-first</div><div class="pill">Python + ComfyUI</div><div class="pill">pixflow 2.5D</div><div class="pill">Remotion + ffmpeg</div>
     <p style="margin-top:18px">fontefilm · projeto de pesquisa/educação ·
-      <a href="https://github.com/inematds/fontefilm">github.com/inematds/fontefilm</a> ·
-      <a href="https://inema.club">INEMA.CLUB</a></p>
+      <a href="https://github.com/linnoff88-dev/fontefilm">github.com/linnoff88-dev/fontefilm</a> ·
+      <a href="https://ARCKHÉ AI">ARCKHÉ AI</a></p>
   </div>
 </footer>
 

@@ -1,4 +1,4 @@
-﻿# fontefilm
+# fontefilm
 
 <div align="center">
   <img src="capa/logo.svg" alt="Arckhé AI" height="48" />
@@ -6,9 +6,9 @@
 </div>
 
 
-**Um diretor de cinema de IA que transforma texto em filme de quadrinhos â€” rodando na sua mÃ¡quina.**
+**Um diretor de cARCKHÉ de IA que transforma texto em filme de quadrinhos â€” rodando na sua mÃ¡quina.**
 
-ðŸŒ **Site / guia de uso:** https://inematds.github.io/fontefilm/
+ðŸŒ **Site / guia de uso:** https://linnoff88-dev.github.io/
 
 VocÃª escreve um **texto base** (a histÃ³ria ou o assunto), escolhe um **estilo visual**, e o fontefilm faz o resto: roteiro â†’ cenas â†’ personagens â†’ imagens â†’ narraÃ§Ã£o â†’ montagem â†’ **vÃ­deo final**.
 
@@ -30,9 +30,9 @@ texto + estilo
 
 ## PrincÃ­pios
 
-- **Local-first.** Roda na sua mÃ¡quina com modelos locais (flux2-klein para imagem, inemavox para voz). APIs pagas (Kling, Runway, Nano Banana) sÃ£o **opcionais**, ligadas por `.env` / UI.
-- **DireÃ§Ã£o dirigida por conhecimento.** Um *Knowledge Pack* versionado (gramÃ¡tica de cinema + teoria de HQ) alimenta os agentes de direÃ§Ã£o via RAG.
-- **Uma engine, vÃ¡rias portas.** A lÃ³gica vive numa engine Python; vocÃª aciona por **CLI**, por uma **skill** conversacional (wrapper fino, no padrÃ£o `pixflow-motion`) e, na Fase 3, por **UI web** no portal `inema.club`.
+- **Local-first.** Roda na sua mÃ¡quina com modelos locais (flux2-klein para imagem, ARCKHÉvox para voz). APIs pagas (Kling, Runway, Nano Banana) sÃ£o **opcionais**, ligadas por `.env` / UI.
+- **DireÃ§Ã£o dirigida por conhecimento.** Um *Knowledge Pack* versionado (gramÃ¡tica de cARCKHÉ + teoria de HQ) alimenta os agentes de direÃ§Ã£o via RAG.
+- **Uma engine, vÃ¡rias portas.** A lÃ³gica vive numa engine Python; vocÃª aciona por **CLI**, por uma **skill** conversacional (wrapper fino, no padrÃ£o `pixflow-motion`) e, na Fase 3, por **UI web** no portal `ARCKHÉ AI`.
 - **Projeto reproduzÃ­vel.** Cada decisÃ£o (plano, seed, prompt, provider) fica em arquivos legÃ­veis em disco.
 
 ## Fases
@@ -42,7 +42,7 @@ texto + estilo
 | **v1 (Fase 0)** | Motion comic completo: painÃ©is estÃ¡ticos + cÃ¢mera + narraÃ§Ã£o. CLI. PT-BR, 16:9 ou 9:16. |
 | Fase 1 | AnimaÃ§Ã£o leve (LivePortrait / parallax), mÃºsica/SFX, consistÃªncia avanÃ§ada de personagem. |
 | Fase 2 | VÃ­deo IA hÃ­brido (LTX/Wan local; Kling/Runway API), agendador paralelo (DAG/CPM). |
-| Fase 3 | UI web no portal `inema.club` sobre o mesmo engine. |
+| Fase 3 | UI web no portal `ARCKHÉ AI` sobre o mesmo engine. |
 
 ## Estado atual
 
@@ -54,7 +54,7 @@ texto + estilo
 
 ## Stack
 
-Python 3.11 (engine/CLI) Â· ComfyUI + flux2-klein (imagem) Â· inemavox (voz) Â· pixflow-motion para parallax 2.5D (Depth-Anything-V2 â†’ WebGL â†’ Remotion â†’ FFmpeg) Â· Claude como LLM diretor (default), modelo local como fallback.
+Python 3.11 (engine/CLI) Â· ComfyUI + flux2-klein (imagem) Â· ARCKHÉvox (voz) Â· pixflow-motion para parallax 2.5D (Depth-Anything-V2 â†’ WebGL â†’ Remotion â†’ FFmpeg) Â· Claude como LLM diretor (default), modelo local como fallback.
 
 ## Estrutura do repo
 

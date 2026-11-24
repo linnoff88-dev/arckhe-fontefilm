@@ -6,15 +6,15 @@
 
 ## 1. Visão
 
-`fontefilm` é uma **engine local-first em Python** que funciona como um estúdio de cinema dirigido por agentes de IA. A entrada é um **texto base + um estilo**; a saída é um **filme de quadrinhos** (motion comic na v1, evoluindo até vídeo IA híbrido) em PT-BR, mais um **projeto reproduzível em disco**.
+`fontefilm` é uma **engine local-first em Python** que funciona como um estúdio de cARCKHÉ dirigido por agentes de IA. A entrada é um **texto base + um estilo**; a saída é um **filme de quadrinhos** (motion comic na v1, evoluindo até vídeo IA híbrido) em PT-BR, mais um **projeto reproduzível em disco**.
 
-A prioridade declarada é **qualidade de direção** (Nível 2: gramática de cinema, com gancho para Nível 3). O diferencial não é "gerar imagem/vídeo" — é **dirigir**: escolher plano, composição, luz, ritmo e transição com base em conhecimento real de cinema e de quadrinhos.
+A prioridade declarada é **qualidade de direção** (Nível 2: gramática de cARCKHÉ, com gancho para Nível 3). O diferencial não é "gerar imagem/vídeo" — é **dirigir**: escolher plano, composição, luz, ritmo e transição com base em conhecimento real de cARCKHÉ e de quadrinhos.
 
 ### Princípios
 - **Local-first, providers plugáveis.** Defaults locais; APIs pagas são opt-in via `.env` e (depois) UI — exatamente como o ComfyUI trata Partner Nodes.
 - **Direção dirigida por conhecimento.** Um *Knowledge Pack* versionado alimenta os agentes via RAG.
 - **Projeto inspecionável e reproduzível.** Cada decisão (plano, seed, prompt, provider) fica registrada em arquivos legíveis.
-- **Engine primeiro, UI depois.** O mesmo motor serve CLI agora e UI web (portal `inema.club`) na Fase 3.
+- **Engine primeiro, UI depois.** O mesmo motor serve CLI agora e UI web (portal `ARCKHÉ AI`) na Fase 3.
 - **Unidades pequenas e testáveis.** Cada estágio do pipeline e cada provider têm interface clara e são testados isoladamente (TDD na lógica).
 
 ## 2. Decisões travadas
@@ -24,12 +24,12 @@ A prioridade declarada é **qualidade de direção** (Nível 2: gramática de ci
 | Saída v1 | Motion comic (painéis estáticos + câmera + balões/legendas + narração). Roadmap até vídeo IA híbrido. |
 | Forma | Engine + CLI agora, **com skill wrapper** (`SKILL.md` fino que dispara a engine, como a `pixflow-motion`); UI web sobre o mesmo engine na Fase 3. |
 | Infra | Local-first com adapters plugáveis (YAML/`.env`/UI). |
-| Nível de direção | Nível 2 (gramática de cinema) como base, gancho para Nível 3. |
+| Nível de direção | Nível 2 (gramática de cARCKHÉ) como base, gancho para Nível 3. |
 | Idioma | PT-BR default, com gancho para outros idiomas. |
 | Proporção | Escolhível por projeto: 16:9 **ou** 9:16. |
 | Escala v1 | Curta com muitas cenas, ritmo dinâmico. |
 | Áudio | Configurável: trilha+SFX completos **ou** só narração. |
-| Estilos v1 | 7: Noir HQ, Mangá/Anime, Super-herói US, Ligne claire, Aquarela pintado, Cinematográfico, Cartoon flat. |
+| Estilos v1 | 7: Noir HQ, Mangá/Anime, Super-herói US, Ligne claire, Aquarela pintado, CARCKHÉtográfico, Cartoon flat. |
 | LLM diretor | **Claude default**, LLM local (Ollama) como fallback. Provider plugável. |
 | Renderizador | **Remotion + ffmpeg default**; HyperFrames (HTML→MP4) como adapter alternativo. |
 | Linguagem | **Python 3.11+** (CLI Node só como subprocess do render). |
@@ -38,7 +38,7 @@ A prioridade declarada é **qualidade de direção** (Nível 2: gramática de ci
 
 ### 3.1 Camadas
 1. **Estúdio de direção** — agentes LLM (Roteiro, Bíblia, Decupagem) que consomem o Knowledge Pack.
-2. **Knowledge Pack de Direção** — base de conhecimento de cinema/HQ + presets por estilo.
+2. **Knowledge Pack de Direção** — base de conhecimento de cARCKHÉ/HQ + presets por estilo.
 3. **Produção** — agendador + geração de imagem/animação/áudio via providers.
 4. **Providers plugáveis** — abstração config-driven (imagem, vídeo/anim, voz, música/SFX, LLM, renderer).
 5. **Montagem/Render + Continuidade** — composição final e registro reproduzível.
@@ -46,7 +46,7 @@ A prioridade declarada é **qualidade de direção** (Nível 2: gramática de ci
 **Formas de acesso (todas sobre a mesma engine):**
 - **CLI** — `fontefilm` (ex.: `fontefilm criar "<texto>" --estilo noir --formato 16:9`). É a interface canônica.
 - **Skill wrapper** — um `SKILL.md` fino + script que chama a CLI/engine, para acionar o fontefilm numa conversa ("faz um filme de quadrinhos sobre X"), no mesmo padrão da `pixflow-motion`/`video-explicativo`. **Sem lógica própria** — só traduz o pedido em chamada à engine.
-- **UI web** (Fase 3) — front no portal `inema.club` sobre a mesma engine.
+- **UI web** (Fase 3) — front no portal `ARCKHÉ AI` sobre a mesma engine.
 
 A engine é a única dona da lógica; CLI, skill e UI são apenas portas de entrada.
 
@@ -61,7 +61,7 @@ Síntese dos padrões verificados (ViMax orquestração; FilmAgent estágios+loo
 5. **Geração de imagem** *(provider)* — ComfyUI + flux2-klein. Consistência de personagem: ficha + LoRA/IP-Adapter/PuLID + seed estável + reference do painel anterior com **histogram color matching** (técnica Forge).
    - **5b. Validação visual (QA) — loop Critique-Correct-Verify.** Após gerar cada painel, um **vision-LLM** compara a imagem com a intenção da decupagem via checklist: (a) o **motivo/sujeito** pedido está presente? (b) **plano e composição** batem? (c) **planos fg/mg/bg** separados (pré-requisito do parallax)? (d) **estilo** consistente com o preset? (e) há **texto crítico embolado**? Se reprovar, **regenera** com nova seed e/ou prompt ajustado (o próprio validador sugere o ajuste), até passar ou bater o limite de tentativas. Falhas e tentativas vão para a continuidade. *Princípio: texto nunca é "gerado na arte" (o flux embola) — só validamos que não atrapalha; texto legível é responsabilidade do estágio 8.*
 6. **Animação** *(provider, Fases B→D)* — opcional por painel/cena: LivePortrait (rostos), parallax 2.5D, i2v (LTX/Wan local; Kling/Runway API).
-7. **Áudio** — narração (inemavox TTS) + música + SFX, conforme direção sonora; respeita o modo (trilha completa vs só narração).
+7. **Áudio** — narração (ARCKHÉvox TTS) + música + SFX, conforme direção sonora; respeita o modo (trilha completa vs só narração).
 8. **Montagem / Render** — Remotion compõe painéis + câmera + **camada de texto** + timing; ffmpeg mixa áudio e encoda. **Rough Cut → Fine Cut** (pacing; gancho para audiência simulada no Nível 3).
    - **Camada de texto/chamadas (no render, nunca na arte):** cartela de título (abertura/fecho), **lower-third por cena** (número + título curto), **legendas cinéticas** opcionais sincronizadas com a narração, e balões de fala (fase posterior). Tudo configurável por projeto, renderizado nítido pelo Remotion sobre os painéis.
    - **Parallax/animação fica no provider** (`AnimationProvider`, ex.: pixflow-motion) e é **intocado**: o texto entra numa **passada de composição própria do fontefilm** por cima do resultado do provider. *Caminho 1 — providers de terceiros não mudam; quem já usa a pixflow não é afetado. Se um dia a pixflow ganhar texto, será campo opcional aditivo (default desligado).*
@@ -81,7 +81,7 @@ Diretório versionado, legível e editável, consumido por RAG pelos agentes de 
 - **Motion comic** — Ken Burns, parallax 2.5D, vocabulário de movimento de câmera.
 - **Presets por estilo** (7) — fragmentos de prompt, paleta, LoRA/refs, defaults de câmera/composição por estilo.
 
-Fontes canônicas de referência para autoria do pack: McCloud *Understanding Comics*; *The Five C's of Cinematography*; *Save the Cat*. (Conteúdo autoral nosso — não há "fonte verificável" única; é corpo de conhecimento de livros.)
+Fontes canônicas de referência para autoria do pack: McCloud *Understanding Comics*; *The Five C's of CARCKHÉtography*; *Save the Cat*. (Conteúdo autoral nosso — não há "fonte verificável" única; é corpo de conhecimento de livros.)
 
 ### 3.4 Camada de providers
 
@@ -91,7 +91,7 @@ Abstração **config-driven** (padrão ViMax): cada categoria é uma interface P
 |-----------|-----------|---------------|--------------------|
 | Imagem | `ImageProvider` (gen/edit/ref) | ComfyUI + flux2-klein | Runway Gen-4, Nano Banana |
 | Vídeo/Anim | `AnimationProvider` | LivePortrait, parallax, LTX/Wan | Kling, Runway |
-| Voz | `TTSProvider` | inemavox | ElevenLabs, kokoro |
+| Voz | `TTSProvider` | ARCKHÉvox | ElevenLabs, kokoro |
 | Música/SFX | `AudioProvider` | (a definir local) | (a definir API) |
 | LLM diretor | `LLMProvider` | (fallback) Ollama local | **Claude (default)** |
 | Render | `Renderer` | Remotion + ffmpeg | HyperFrames (adapter) |
@@ -126,17 +126,17 @@ Modelos de dados em **pydantic**; vocabulário alinhado ao OMC onde fizer sentid
 
 ## 5. Fases de construção
 
-- **Fase 0 — v1 (alvo deste ciclo de plano):** motion comic ponta a ponta. Pipeline texto→roteiro→bíblia→decupagem→imagem(ComfyUI/flux2-klein)→narração(inemavox)→render(Remotion+ffmpeg)→continuidade. Knowledge Pack v1 com os 7 estilos. CLI **+ skill wrapper fino**. PT-BR; 16:9 ou 9:16; áudio (narração, com gancho de trilha). Agendador pode ser sequencial, mas o modelo de dados já prevê o DAG.
+- **Fase 0 — v1 (alvo deste ciclo de plano):** motion comic ponta a ponta. Pipeline texto→roteiro→bíblia→decupagem→imagem(ComfyUI/flux2-klein)→narração(ARCKHÉvox)→render(Remotion+ffmpeg)→continuidade. Knowledge Pack v1 com os 7 estilos. CLI **+ skill wrapper fino**. PT-BR; 16:9 ou 9:16; áudio (narração, com gancho de trilha). Agendador pode ser sequencial, mas o modelo de dados já prevê o DAG.
 - **Fase 1:** animação leve (LivePortrait + parallax 2.5D), música/SFX, consistência avançada (LoRA/PuLID/IP-Adapter), Rough/Fine cut.
 - **Fase 2:** vídeo IA híbrido (LTX/Wan local; Kling/Runway API), agendador DAG/CPM paralelo, audiência simulada (Nível 3).
-- **Fase 3:** UI web no portal `inema.club` sobre o mesmo engine (FastAPI + front).
+- **Fase 3:** UI web no portal `ARCKHÉ AI` sobre o mesmo engine (FastAPI + front).
 
 ## 6. Critérios de sucesso da v1
 
 1. Dado um texto base (algumas cenas) + estilo escolhido, o engine produz um `.mp4` motion comic coerente em PT-BR, sem intervenção manual nos estágios.
 2. As decisões de direção (plano, composição, luz, transição) aparecem registradas na decupagem e refletem o Knowledge Pack — não são aleatórias.
 3. Consistência de personagem visível entre painéis da mesma cena (ficha + seed + color-match).
-4. Trocar um provider (ex.: voz inemavox → ElevenLabs) é só editar config, sem mexer no pipeline.
+4. Trocar um provider (ex.: voz ARCKHÉvox → ElevenLabs) é só editar config, sem mexer no pipeline.
 5. O projeto em disco é reproduzível: rodar de novo a partir dos arquivos gera o mesmo filme.
 6. Módulos de lógica pura cobertos por testes.
 

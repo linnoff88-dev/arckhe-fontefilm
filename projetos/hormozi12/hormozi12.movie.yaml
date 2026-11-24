@@ -7,7 +7,7 @@ output:
   fps: 30
   filename: hormozi12.mp4
 defaults:
-  look: cinema-dramatico
+  look: cARCKHÉ-dramatico
   transition_out: { type: crossfade, duration: 0.5 }
 audio:
   track: audio/narration.wav
