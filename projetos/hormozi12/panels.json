@@ -23,7 +23,7 @@
 
     { "id": "s4", "seed": 1014, "camera": "ken_burns",
       "prompt": "a spotlit results board covered in golden trophies and a soaring upward bar chart in the midground, a small podium in the foreground, an impressed audience silhouetted in the dark background, dramatic stage lighting",
-      "narr": "Lei quatro: prova vale mais que promessa. Não diga que é o melhor. Mostre resultados reais." },
+      "narr": "Lei quatro: prova vale mais que promessa. Nêo diga que é o melhor. Mostre resultados reais." },
 
     { "id": "s5", "seed": 1015, "camera": "push_in",
       "prompt": "a giant price tag shaped like an upward arrow climbing skyward in the midground, an elegant premium boutique with a few golden VIP customers, velvet ropes in the foreground, luxurious interior fading into the background",
@@ -40,7 +40,7 @@
 
     { "id": "s8", "seed": 1018, "camera": "push_in",
       "prompt": "a sleek rocket fueled by glowing marketing icons blasting off from an office desk in the midground, bursts of flame and scattered paperwork left behind in the foreground, a dawn sky in the background, dynamic upward motion",
-      "narr": "Lei oito: até quinhentos mil por mês, foco total em marketing. Não é hora de processo nem cultura. É hora de vender." },
+      "narr": "Lei oito: até quinhentos mil por mês, foco total em marketing. Nêo é hora de processo nem cultura. É hora de vender." },
 
     { "id": "s9", "seed": 1019, "camera": "pull_out",
       "prompt": "a single glowing lever being pulled in the foreground triggering a massive multiplying explosion of golden coins and arrows fanning out in the midground, a vast factory of duplication in the background, epic scale",
@@ -48,7 +48,7 @@
 
     { "id": "s10", "seed": 1020, "camera": "push_in",
       "prompt": "a sharp focused laser beam shooting from the foreground striking the bullseye of a single glowing target in the midground, everything else faded and grayed out around it, a dark minimal background, intense focus",
-      "narr": "Lei dez: foco radical. Abaixo de um milhão por ano: um canal, um avatar, um produto." },
+      "narr": "Lei dez: foco radical. Abaixo de um milhêo por ano: um canal, um avatar, um produto." },
 
     { "id": "s11", "seed": 1021, "camera": "push_in",
       "prompt": "a lone climber at the base in the foreground facing a steep dark imposing mountain looming in the midground, storm clouds and a faint summit light in the background, dramatic confrontation, heroic low angle",
@@ -60,6 +60,6 @@
 
     { "id": "s13", "seed": 1023, "camera": "pull_out",
       "prompt": "a confident entrepreneur walking forward on an open road toward a glowing city at sunrise, long shadow in the foreground, the bright skyline of opportunity in the background, hopeful epic atmosphere",
-      "narr": "Doze leis. Uma decisão: começar hoje." }
+      "narr": "Doze leis. Uma decisêo: começar hoje." }
   ]
 }

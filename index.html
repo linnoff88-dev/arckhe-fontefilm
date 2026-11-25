@@ -123,9 +123,9 @@
   <div class="glow"></div>
   <div class="wrap">
     <div>
-      <span class="chip">Engine local-first · direção de cARCKHÉ com IA</span>
+      <span class="chip">Engine local-first · direçêo de cARCKHÉ com IA</span>
       <h1>Transforme <span class="amb">texto</span> em filme de quadrinhos.</h1>
-      <p class="lead">Você escreve a história e escolhe o estilo. O fontefilm <b>dirige</b> — plano, composição, luz, ritmo — e produz o filme. Rodando na sua máquina.</p>
+      <p class="lead">Você escreve a história e escolhe o estilo. O fontefilm <b>dirige</b> — plano, composiçêo, luz, ritmo — e produz o filme. Rodando na sua máquina.</p>
       <div class="cta">
         <a class="btn" href="#curso">Começar o guia</a>
         <a class="btn ghost" href="https://github.com/linnoff88-dev/fontefilm" target="_blank" rel="noopener">Ver no GitHub</a>
@@ -140,8 +140,8 @@
   <h2>Um diretor de cARCKHÉ de IA</h2>
   <p class="sub">A maioria das ferramentas só <i>gera</i> imagem ou vídeo. O fontefilm tenta <b>dirigir</b>: aplica gramática de cARCKHÉ e teoria de quadrinhos (Scott McCloud) para decidir cada quadro — e mantém continuidade de personagem e estilo do começo ao fim.</p>
   <div class="grid g3">
-    <div class="card"><h3>🎬 Direção de verdade</h3><p>Tipo de plano, regra dos 180°, composição, luz por emoção, estrutura em 3 atos e transições entre quadros — um <b>Knowledge Pack</b> de cARCKHÉ guia os agentes.</p></div>
-    <div class="card"><h3>🖥️ Local-first</h3><p>Roda na sua máquina com modelos locais (flux2-klein, ARCKHÉvox). APIs pagas (Kling, Runway) são opcionais, ligadas por <code>.env</code>.</p></div>
+    <div class="card"><h3>🎬 Direçêo de verdade</h3><p>Tipo de plano, regra dos 180°, composiçêo, luz por emoçêo, estrutura em 3 atos e transições entre quadros — um <b>Knowledge Pack</b> de cARCKHÉ guia os agentes.</p></div>
+    <div class="card"><h3>🖥️ Local-first</h3><p>Roda na sua máquina com modelos locais (flux2-klein, ARCKHÉvox). APIs pagas (Kling, Runway) sêo opcionais, ligadas por <code>.env</code>.</p></div>
     <div class="card"><h3>🧩 Reproduzível</h3><p>Cada projeto é uma pasta com texto, decisões, seeds e assets. Rodar de novo gera o mesmo filme.</p></div>
   </div>
 </div></section>
@@ -149,21 +149,21 @@
 <section id="fluxo"><div class="wrap">
   <span class="chip">Como funciona</span>
   <h2>Do texto ao filme, em 9 estágios</h2>
-  <p class="sub">O pipeline sintetiza padrões de pipelines open-source (Forge Film, ViMax, FilmAgent, FilMaster) com um cérebro de direção próprio.</p>
+  <p class="sub">O pipeline sintetiza padrões de pipelines open-source (Forge Film, ViMax, FilmAgent, FilMaster) com um cérebro de direçêo próprio.</p>
   <div class="flow">
     <span>Roteiro</span><span class="arr">→</span>
     <span>Bíblia</span><span class="arr">→</span>
     <span>Decupagem</span><span class="arr">→</span>
-    <span>Validação visual</span><span class="arr">→</span>
+    <span>Validaçêo visual</span><span class="arr">→</span>
     <span>Imagem</span><span class="arr">→</span>
-    <span>Animação</span><span class="arr">→</span>
+    <span>Animaçêo</span><span class="arr">→</span>
     <span>Áudio</span><span class="arr">→</span>
     <span>Texto + Montagem</span><span class="arr">→</span>
     <span>Continuidade</span>
   </div>
   <div class="grid g3" style="margin-top:24px">
-    <div class="card"><span class="num">1–3</span><h3>Estúdio de direção</h3><p>Agentes (Roteiro, Bíblia, Decupagem) escrevem a história em 3 atos, extraem personagens/paleta e decidem plano e câmera de cada painel.</p></div>
-    <div class="card"><span class="num">4–7</span><h3>Produção</h3><p>QA visual valida cada painel, gera as imagens com consistência (ficha + seed), aplica movimento (parallax 2.5D) e a narração.</p></div>
+    <div class="card"><span class="num">1–3</span><h3>Estúdio de direçêo</h3><p>Agentes (Roteiro, Bíblia, Decupagem) escrevem a história em 3 atos, extraem personagens/paleta e decidem plano e câmera de cada painel.</p></div>
+    <div class="card"><span class="num">4–7</span><h3>Produçêo</h3><p>QA visual valida cada painel, gera as imagens com consistência (ficha + seed), aplica movimento (parallax 2.5D) e a narraçêo.</p></div>
     <div class="card"><span class="num">8–9</span><h3>Montagem</h3><p>Compõe painéis + câmera + texto/legendas, mixa o áudio e registra a continuidade (seed, prompt, provider).</p></div>
   </div>
 </div></section>
@@ -171,11 +171,11 @@
 <section id="pre"><div class="wrap">
   <span class="chip">Pré-requisitos</span>
   <h2>O que precisa estar no ar</h2>
-  <p class="sub">O teste atual roda o pipeline "na mão" com três peças locais. Confira que estão respondendo:</p>
+  <p class="sub">O teste atual roda o pipeline "na mêo" com três peças locais. Confira que estêo respondendo:</p>
   <div class="grid g3">
-    <div class="card"><h3>🖼️ flux2-klein</h3><p>Geração de imagem dos painéis.</p><pre><span class="c"># imagem (PNG base64)</span>
+    <div class="card"><h3>🖼️ flux2-klein</h3><p>Geraçêo de imagem dos painéis.</p><pre><span class="c"># imagem (PNG base64)</span>
 POST <span class="s">http://localhost:8000/generate</span></pre></div>
-    <div class="card"><h3>🔊 ARCKHÉvox</h3><p>Narração PT-BR (voz <span class="amb">bella</span>).</p><pre><span class="c"># voz (MP3)</span>
+    <div class="card"><h3>🔊 ARCKHÉvox</h3><p>Narraçêo PT-BR (voz <span class="amb">bella</span>).</p><pre><span class="c"># voz (MP3)</span>
 POST <span class="s">127.0.0.1:7860/tts/vc</span></pre></div>
     <div class="card"><h3>🎞️ pixflow-motion</h3><p>Parallax 2.5D → MP4.</p><pre><span class="k">cd</span> ~/.claude/skills/pixflow-motion
 npm install
@@ -190,7 +190,7 @@ node cli/pixflow-motion.mjs check-deps</pre></div>
 
   <div class="step"><div class="b">1</div><div>
     <h3>Descreva os painéis</h3>
-    <p>Crie <code>panels.json</code>: o estilo visual, e cada painel com seu prompt, seed, câmera e narração.</p>
+    <p>Crie <code>panels.json</code>: o estilo visual, e cada painel com seu prompt, seed, câmera e narraçêo.</p>
 <pre>{
   <span class="k">"title"</span>: <span class="s">"Receita em 12 Passos"</span>,
   <span class="k">"style"</span>: <span class="s">"bold graphic-novel comic, layered depth…"</span>,
@@ -203,7 +203,7 @@ node cli/pixflow-motion.mjs check-deps</pre></div>
   </div></div>
 
   <div class="step"><div class="b">2</div><div>
-    <h3>Gere imagens, narração e o roteiro de movimento</h3>
+    <h3>Gere imagens, narraçêo e o roteiro de movimento</h3>
     <p><code>build.mjs</code> chama o flux2-klein e o ARCKHÉvox, sincroniza a trilha e emite o <i>movie spec</i> da pixflow.</p>
 <pre><span class="k">node</span> build.mjs
 <span class="c"># ✓ 14 cenas, 121.7s. Spec: receita12.movie.yaml</span></pre>
@@ -234,7 +234,7 @@ node cli/pixflow-motion.mjs check-deps</pre></div>
   <h2>Feitos com este pipeline</h2>
   <p class="sub">Dois curtas-teste, do texto ao MP4 narrado e legendado — em estilo de quadrinho.</p>
   <div class="ex">
-    <figure><img src="assets/run.jpg" alt="Painel — Execute com velocidade"><figcaption><b>Receita em 12 Passos</b> — execução e crescimento, com CTA ARCKHÉ AI. 16:9 e 9:16.</figcaption></figure>
+    <figure><img src="assets/run.jpg" alt="Painel — Execute com velocidade"><figcaption><b>Receita em 12 Passos</b> — execuçêo e crescimento, com CTA ARCKHÉ AI. 16:9 e 9:16.</figcaption></figure>
     <figure><img src="assets/comic.jpg" alt="Painel — Oferta âncora"><figcaption><b>12 Leis do Crescimento</b> — dicas de negócios, motion comic 1080p narrado.</figcaption></figure>
   </div>
 </div></section>
@@ -243,8 +243,8 @@ node cli/pixflow-motion.mjs check-deps</pre></div>
   <span class="chip">Roadmap</span>
   <h2>Onde isto vai chegar</h2>
   <p class="sub">A mesma engine, ganhando capacidades e portas de acesso.</p>
-  <div class="phase"><div class="tag">v1 · agora</div><div class="d"><strong>Motion comic completo</strong><span>Texto → painéis → narração → render, via CLI + skill. PT-BR, 16:9 ou 9:16.</span></div></div>
-  <div class="phase"><div class="tag">Fase 1</div><div class="d"><strong>Animação leve</strong><span>LivePortrait / parallax avançado, música e SFX, consistência de personagem (LoRA/PuLID).</span></div></div>
+  <div class="phase"><div class="tag">v1 · agora</div><div class="d"><strong>Motion comic completo</strong><span>Texto → painéis → narraçêo → render, via CLI + skill. PT-BR, 16:9 ou 9:16.</span></div></div>
+  <div class="phase"><div class="tag">Fase 1</div><div class="d"><strong>Animaçêo leve</strong><span>LivePortrait / parallax avançado, música e SFX, consistência de personagem (LoRA/PuLID).</span></div></div>
   <div class="phase"><div class="tag">Fase 2</div><div class="d"><strong>Vídeo IA híbrido</strong><span>Clipes por cena (LTX/Wan local; Kling/Runway API), agendador paralelo DAG/CPM.</span></div></div>
   <div class="phase"><div class="tag">Fase 3</div><div class="d"><strong>UI web no portal</strong><span>Interface no ARCKHÉ AI sobre o mesmo motor.</span></div></div>
 </div></section>
@@ -252,7 +252,7 @@ node cli/pixflow-motion.mjs check-deps</pre></div>
 <footer>
   <div class="wrap">
     <div class="pill">local-first</div><div class="pill">Python + ComfyUI</div><div class="pill">pixflow 2.5D</div><div class="pill">Remotion + ffmpeg</div>
-    <p style="margin-top:18px">fontefilm · projeto de pesquisa/educação ·
+    <p style="margin-top:18px">fontefilm · projeto de pesquisa/educaçêo ·
       <a href="https://github.com/linnoff88-dev/fontefilm">github.com/linnoff88-dev/fontefilm</a> ·
       <a href="https://ARCKHÉ AI">ARCKHÉ AI</a></p>
   </div>
