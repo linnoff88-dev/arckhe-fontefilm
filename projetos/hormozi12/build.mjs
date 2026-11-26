@@ -1,11 +1,11 @@
 #!/usr/bin/env node
-// Mini-fontefilm: gera painéis (flux2-klein) + narração (inemavox), monta trilha e emite movie spec pixflow.
+// Mini-fontefilm: gera painéis (flux2-klein) + narração (ARCKHÉvox), monta trilha e emite movie spec pixflow.
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
 import { execFileSync } from "node:child_process";
 
 const DIR = new URL(".", import.meta.url).pathname;
 const FLUX = process.env.FLUX_URL || "http://localhost:8000/generate";
-const TTS = process.env.INEMAVOX_TTS_URL || "http://127.0.0.1:7860";
+const TTS = process.env.ARCKHÉVOX_TTS_URL || "http://127.0.0.1:7860";
 const VOICE = process.env.VOICE || "bella";
 
 const cfg = JSON.parse(readFileSync(DIR + "panels.json", "utf8"));
@@ -92,7 +92,7 @@ y.push("  resolution: 1920x1080");
 y.push("  fps: 30");
 y.push("  filename: hormozi12.mp4");
 y.push("defaults:");
-y.push("  look: cinema-dramatico");
+y.push("  look: cARCKHÉ-dramatico");
 y.push("  transition_out: { type: crossfade, duration: 0.5 }");
 y.push("audio:");
 y.push("  track: audio/narration.wav");
